@@ -25,7 +25,7 @@ export class NavComponent implements OnInit {
         console.log(this._authConf.get().scope);
         this.hasCarsAccess = true;
         this.hasMaintenancesAccess = true;
-        this.hasOwnersAccess = false;
+        this.hasOwnersAccess = true;
       }
     });
   }
