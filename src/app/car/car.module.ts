@@ -30,10 +30,11 @@ import {MatSnackBar, MatSnackBarModule} from "@angular/material/snack-bar";
     CarSuccessAddSnack,
     CarSuccessEditSnack,
   ],
-  exports: [
-    CarListComponent,
-    CarDetailDialogComponent,
-  ],
+    exports: [
+        CarListComponent,
+        CarDetailDialogComponent,
+        CarEditComponent,
+    ],
   imports: [
     BrowserAnimationsModule,
     CommonModule,

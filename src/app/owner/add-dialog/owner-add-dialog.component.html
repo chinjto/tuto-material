@@ -1,0 +1,8 @@
+<h1 mat-dialog-title>Adding owner</h1>
+<div mat-dialog-content>
+  <app-owner-edit></app-owner-edit>
+</div>
+<div mat-dialog-actions>
+  <button mat-button (click)="onNoClick()">Cancel</button>
+  <button mat-button [mat-dialog-close]="data" cdkFocusInitial>Save</button>
+</div>
