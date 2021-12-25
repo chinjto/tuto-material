@@ -31,7 +31,9 @@
   >
 <!--    <input (keyup)="onKey($event.target.value)">-->
     <mat-option>None</mat-option>
-    <mat-option *ngFor="let car of selectedCars" [value]="car">{{car.licensePlate}}</mat-option>
+    <mat-option *ngFor="let car of selectedCars" [value]="car">
+      {{car.brand}} {{car.model}} [{{car.licensePlate}}] / {{car.owner?.firstName}} {{car.owner?.lastName}})
+    </mat-option>
   </mat-select>
 </mat-form-field>
 <mat-form-field appearance="fill">
